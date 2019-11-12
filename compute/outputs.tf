@@ -1,4 +1,3 @@
-
 #-----compute/outputs.tf-----
 
 output "server_id" {
