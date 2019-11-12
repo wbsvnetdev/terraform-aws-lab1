@@ -25,7 +25,6 @@ resource "aws_instance" "lab_app" {
   instance_type = "${var.instance_type}"
   ami           = "${data.aws_ami.server_ami.id}"
 
-
   tags {
     Name = "lab_app"
   }
@@ -34,4 +33,6 @@ resource "aws_instance" "lab_app" {
   vpc_security_group_ids = ["${var.security_group}"]
   subnet_id              = "${var.subnets}"
   user_data              = "${data.template_file.user-init.rendered}"
+
+
 }
