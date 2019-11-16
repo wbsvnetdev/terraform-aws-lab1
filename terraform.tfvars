@@ -5,6 +5,6 @@ public_cidrs = "10.0.1.0/24"
 accessip    = "0.0.0.0/0"
 
 key_name = "lab_key"
-public_key_path = "/home/cloud_user/.ssh/id_rsa.pub"
+public_key_path = "/root/.ssh/id_rsa.pub"
 server_instance_type = "t2.micro"
 instance_count = 1
